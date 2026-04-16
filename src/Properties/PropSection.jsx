@@ -340,18 +340,18 @@ function PropSection() {
             <div className="col-lg-12">
               <ul className="pagination">
                 <li>
-                  <a href="#">1</a>
+                  <a href="/">1</a>
                 </li>
                 <li>
-                  <a className="is_active" href="#">
+                  <a className="is_active" href="/">
                     2
                   </a>
                 </li>
                 <li>
-                  <a href="#">3</a>
+                  <a href="/">3</a>
                 </li>
                 <li>
-                  <a href="#">&gt;&gt;</a>
+                  <a href="/">&gt;&gt;</a>
                 </li>
               </ul>
             </div>
