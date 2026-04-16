@@ -20,7 +20,7 @@ function SubNavbar() {
       <div className="col-lg-4 col-md-4">
         <ul className="social-links">
           <li>
-            <a href="#">
+            <a href="/">
               <i className="fab fa-facebook" />
             </a>
           </li>
@@ -30,12 +30,12 @@ function SubNavbar() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <i className="fab fa-linkedin" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <i className="fab fa-instagram" />
             </a>
           </li>

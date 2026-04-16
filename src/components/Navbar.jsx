@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router';
 import { useCart } from 'react-use-cart';
 
