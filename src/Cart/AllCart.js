@@ -9,7 +9,7 @@ function Cart() {
   if (isEmpty) {
      return (
         <div className="text-center"> 
-            <img src="/assets/images/Empty-cart.png" style={{width:"350px"}} />
+            <img src="/assets/images/Empty-cart.png" style={{width:"350px"}} alt="product" />
             <h1 className="text-center mt-5">Your Cart is Empty . . .</h1>;
         </div>
      )
@@ -37,9 +37,7 @@ function Cart() {
                           <div className="row">
                             <div className="col-md-3">
                               <img
-                                className="img-fluid mx-auto d-block image"
-                                src={item.images[0]}
-                              />
+                                className="img-fluid mx-auto d-block image" src={item.images[0]} alt="product" />
                             </div>
                             <div className="col-md-8">
                               <div className="info">
