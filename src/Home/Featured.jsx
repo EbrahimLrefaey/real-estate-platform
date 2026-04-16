@@ -49,6 +49,7 @@ function Featured() {
                 <a
                   href="https://www.google.com/search?q=best+free+css+templates"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   best free CSS templates
                 </a>{" "}

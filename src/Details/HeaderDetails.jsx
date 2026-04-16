@@ -8,7 +8,7 @@ function HeaderDetails() {
           <div className="row">
             <div className="col-lg-12">
               <span className="breadcrumb">
-                <a href="#">Home</a> / Single Property
+                <a href="/">Home</a> / Single Property
               </span>
               <h3>Single Property</h3>
             </div>

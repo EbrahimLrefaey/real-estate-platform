@@ -37,7 +37,7 @@ function Cart() {
                           <div className="row">
                             <div className="col-md-3">
                               <img
-                                className="img-fluid mx-auto d-block image" src={item.images[0]} alt="product" />
+                                className="img-fluid mx-auto d-block image" src={item.images?.[0]} alt="product" />
                             </div>
                             <div className="col-md-8">
                               <div className="info">

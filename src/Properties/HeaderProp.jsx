@@ -8,7 +8,7 @@ function HeaderProp() {
     <div className="row">
       <div className="col-lg-12">
         <span className="breadcrumb">
-          <a href="#">Home</a> / Properties
+          <a href="/">Home</a> / Properties
         </span>
         <h3>Properties</h3>
       </div>

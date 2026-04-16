@@ -28,7 +28,7 @@ function Page() {
                 </form>
             </div>
             {data.map((item) => {
-              return search==0? (
+              return search===0? (
                 <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
                   <div className="item">
                     <a href="property-details.html">
@@ -59,7 +59,7 @@ function Page() {
                   </div>
                 </div>
 
-              ):item.id == search?(
+              ):item.id === search?(
                    <div className="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
                   <div className="item">
                     <a href="property-details.html">
