@@ -19,7 +19,8 @@ function SingleDetails() {
                   <a
                     href="https://www.google.com/search?q=best+free+css+templates"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     best free CSS templates
                   </a>{" "}
                   in the world. Please tell your friends about it. Thank you.

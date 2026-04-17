@@ -1,53 +1,54 @@
-import React from 'react'
+import React from "react";
 
 function SubNavbar() {
   return (
     <div>
-
-        <div className="sub-header">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-8 col-md-8">
-        <ul className="info">
-          <li>
-            <i className="fa fa-envelope" /> info@company.com
-          </li>
-          <li>
-            <i className="fa fa-map" /> Sunny Isles Beach, FL 33160
-          </li>
-        </ul>
-      </div>
-      <div className="col-lg-4 col-md-4">
-        <ul className="social-links">
-          <li>
-            <a href="#1">
-              <i className="fab fa-facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/minthu" target="_blank" rel='noreferrer'>
-              <i className="fab fa-twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#3">
-              <i className="fab fa-linkedin" />
-            </a>
-          </li>
-          <li>
-            <a href="#4">
-              <i className="fab fa-instagram" />
-            </a>
-          </li>
-        </ul>
+      <div className="sub-header">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 col-md-8">
+              <ul className="info">
+                <li>
+                  <i className="fa fa-envelope" /> info@company.com
+                </li>
+                <li>
+                  <i className="fa fa-map" /> Sunny Isles Beach, FL 33160
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-4 col-md-4">
+              <ul className="social-links">
+                <li>
+                  <a href="#1">
+                    <i className="fab fa-facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/minthu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#3">
+                    <i className="fab fa-linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#4">
+                    <i className="fab fa-instagram" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-    </div>
-  )
+  );
 }
 
 export default SubNavbar;

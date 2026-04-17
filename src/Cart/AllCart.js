@@ -5,18 +5,28 @@ import { CartProvider } from "react-use-cart";
 import { useCart } from "react-use-cart";
 
 function Cart() {
-  const {  items , updateItemQuantity ,removeItem , cartTotal ,totalitems , isEmpty} = useCart();
+  const {
+    items,
+    updateItemQuantity,
+    removeItem,
+    cartTotal,
+    totalitems,
+    isEmpty,
+  } = useCart();
   if (isEmpty) {
-     return (
-        <div className="text-center"> 
-            <img src="/assets/images/Empty-cart.png" style={{width:"350px"}} alt="product" />
-            <h1 className="text-center mt-5">Your Cart is Empty . . .</h1>;
-        </div>
-     )
+    return (
+      <div className="text-center">
+        <img
+          src="/assets/images/Empty-cart.png"
+          style={{ width: "350px" }}
+          alt="product"
+        />
+        <h1 className="text-center mt-5">Your Cart is Empty . . .</h1>;
+      </div>
+    );
   }
   return (
     <div>
-
       <main className="page">
         <section className="shopping-cart dark">
           <div className="container">
@@ -37,7 +47,10 @@ function Cart() {
                           <div className="row">
                             <div className="col-md-3">
                               <img
-                                className="img-fluid mx-auto d-block image" src={item.images?.[0]} alt="product" />
+                                className="img-fluid mx-auto d-block image"
+                                src={item.images?.[0]}
+                                alt="product"
+                              />
                             </div>
                             <div className="col-md-8">
                               <div className="info">
@@ -45,18 +58,44 @@ function Cart() {
                                   <div className="col-md-5 product-name">
                                     <div className="product-name">
                                       <h6 href="#">{item.title}</h6>
-                                     
                                     </div>
                                   </div>
                                   <div className="col-md-4 quantity">
                                     <label htmlFor="quantity">Quantity:</label>
                                     <h6> {item.quantity} </h6>
-                                    <button className="btn btn-warning" onClick={() =>updateItemQuantity(item.id, item.quantity - 1)}>-</button>
-                                    <button className="btn btn-success mx-2" onClick={() =>updateItemQuantity(item.id, item.quantity + 1)}>+</button>
-                                    <button className="btn btn-danger " onClick={() =>removeItem(item.id)}>&times;</button>
+                                    <button
+                                      className="btn btn-warning"
+                                      onClick={() =>
+                                        updateItemQuantity(
+                                          item.id,
+                                          item.quantity - 1,
+                                        )
+                                      }
+                                    >
+                                      -
+                                    </button>
+                                    <button
+                                      className="btn btn-success mx-2"
+                                      onClick={() =>
+                                        updateItemQuantity(
+                                          item.id,
+                                          item.quantity + 1,
+                                        )
+                                      }
+                                    >
+                                      +
+                                    </button>
+                                    <button
+                                      className="btn btn-danger "
+                                      onClick={() => removeItem(item.id)}
+                                    >
+                                      &times;
+                                    </button>
                                   </div>
                                   <div className="col-md-3 price">
-                                    <span>${Math.ceil(item.price * item.quantity)}</span>
+                                    <span>
+                                      ${Math.ceil(item.price * item.quantity)}
+                                    </span>
                                   </div>
                                 </div>
                               </div>
@@ -65,8 +104,6 @@ function Cart() {
                         </div>
                       );
                     })}
-            
-
                   </div>
                 </div>
 
@@ -87,7 +124,9 @@ function Cart() {
                     </div>
                     <div className="summary-item">
                       <span className="text">Total</span>
-                      <span className="price">${Math.ceil(cartTotal + 30)}</span>
+                      <span className="price">
+                        ${Math.ceil(cartTotal + 30)}
+                      </span>
                     </div>
                     <button
                       type="button"
@@ -102,7 +141,6 @@ function Cart() {
           </div>
         </section>
       </main>
-
     </div>
   );
 }
@@ -110,7 +148,7 @@ function Cart() {
 function AllCart() {
   return (
     <CartProvider>
-      <AllCompo />  
+      <AllCompo />
       <Cart />
       <Footer />
     </CartProvider>
